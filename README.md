@@ -1,6 +1,10 @@
 # 100DaysCoding
 
-Here i will post all the leetcode solution for 100 days. I am is open for suggestions. 
+Hello mates, hope you all have gone through my repository regarding 100dayscodingchallenge, here in my readme file i am adding the links
+for my everyday description and solution. You all can go through these files and can have a access to my codes and explanations and even suggest your 
+opinions for the same.
+Shruti Jethwwa is always open for suggestions.
+THANK YOU for visiting ;-)
 
 Links for all the Questions:
 
