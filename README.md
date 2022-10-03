@@ -7,5 +7,5 @@ Day 2
 Day 3
 Day 4
 Day 5
-Day 6
+[Day 6](https://github.com/shrutiJethwa/100DaysCoding/tree/main/Day%206)
 Day 7
