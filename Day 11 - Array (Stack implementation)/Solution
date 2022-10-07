@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Stack_interface {
+    public static void main(String[] args) {
+        int arr[]=new int[5];
+
+Scanner sc=new Scanner(System.in);
+        System.out.println("Size");
+        int n=sc.nextInt();
+        stack s=new stackPush(n);
+        System.out.println("*****PUSH*****");
+        System.out.println("Enter "+ n+ " Elements");
+        for(int i=0;i<n;i++)
+        {
+            System.out.print((i+1)+": ");
+            int ele=sc.nextInt();
+            s.push(ele);
+        }
+        System.out.println("*****POP*****");
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(s.pop());
+        }
+    }
+}
+
+interface stack{
+    void push(int ele);
+    int pop();
+}
+
+class stackPush implements stack{
+    private int arr[ ];
+    private int top;
+    stackPush(int size)
+    {
+        arr=new int[size];
+        top=-1;
+    }
+    @Override
+    public void push(int ele) {
+        if(top==arr.length)
+        {
+            System.out.println("Stack overflow");
+        }
+        else{
+            top=top+1;
+            arr[top]=ele;
+        }
+    }
+    public int pop()
+    {
+            if(top==-1)
+            {
+                System.out.println("Stack is empty");
+            }
+
+                return arr[top--];
+    }
+}
