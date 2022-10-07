@@ -8,12 +8,19 @@ THANK YOU for visiting ;-)
 
 Topics to be Covered:
 String
+
 Array
+
 LinkedList
-Sorting
+
+Sorting 
+
 Binary Search
+
 Linear Search
+
 Recursion
+
 Bit Manipulation
 
 Links for all the Questions:
