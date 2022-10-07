@@ -6,6 +6,16 @@ opinions for the same.
 Shruti Jethwwa is always open for suggestions.
 THANK YOU for visiting ;-)
 
+Topics to be Covered:
+String
+Array
+LinkedList
+Sorting
+Binary Search
+Linear Search
+Recursion
+Bit Manipulation
+
 Links for all the Questions:
 
 [Day 1 ||](https://github.com/shrutiJethwa/100DaysCoding/blob/main/Day%201)
