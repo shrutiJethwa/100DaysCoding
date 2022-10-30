@@ -1,0 +1,67 @@
+📌Print Pattern:
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+📌Explanation:
+In the above pattern the row is denoted by i and the column is denoted by j.
+We see that the first row prints only a star. The second-row prints two star, and so on.
+Here we have to use two for loops, the first for loop is for row and the second for loop for columns.
+The first print statement prints a star at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+Now the value of i and j is incremented with each iteration.
+For n=5 (the number of rows we want to print).
+
+Iteration 1:
+For i=0, 0<5 (true)
+For j=0, j<=0 (true)
+The first print statement prints a star at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+*
+Now the value of i and j is increased to 1.
+
+Iteration 2:
+For i=1, 1<5 (true)
+For j=1, 1<=1 (true)
+The first print statement prints two stars at the second row and the second println statement prints the spaces and throws the cursor at the next line.
+*
+* *
+Now the value of i and j is increased to 2.
+
+Iteration 3:
+For i=2, 2<5(true)
+For j=2, 2<=2 (true)
+The first print statement prints three stars at the third row and the second println statement prints the spaces and throws the cursor at the next line.
+*
+* *
+* * *
+Now the value of i and j is increased to 3.
+
+Iteration 4:
+For i=3, 3<5 (true)
+For j=3, 3<=3 (true)
+The first print statement prints four stars at the fourth row and the second println statement prints the spaces and throws the cursor at the next line.
+*
+* *
+* * *
+* * * *
+Now the value of i and j is increased to 4.
+
+Iteration 5:
+For i=4, 4<5 (true)
+For j=4, 4<=4 (true)
+The first print statement prints four stars at the fourth row and the second println statement prints the spaces and throws the cursor at the next line.
+*
+* *
+* * *
+* * * *
+* * * * *
+For i=5, 5<5 (false)
+The execution of the program will terminate when the value of i will be equal to the number of rows.
+Now this logic needs to be reversed to print the rest pattern in reverse order.
+Here again initiate two for loops but decrementing the value of i and j will print * in reverse.
