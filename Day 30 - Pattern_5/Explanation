@@ -1,0 +1,15 @@
+📌Print Pattern:
+*
+**
+***
+****
+*****
+
+📌Explanation:
+
+In the above pattern the row is denoted by i and the column is denoted by j.
+We see that the first row prints only a star. The second-row prints two star, and so on.
+Here we have to use three for loops, the first for loop is for row and the second for loop for the spaces and third for loop is for columns.
+The first print statement prints the space between star at the first row and the second print statement prints the star and third print statement prints the space and throws the cursor at the next line.
+
+Formula to print the spaces as per this pattern is: 2 * (row - i)
