@@ -1,0 +1,68 @@
+Print Pattern:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+📌Explanation:
+
+In the above pattern the row is denoted by i and the column is denoted by j.
+We see that the first row prints only a number. The second-row prints two numbers, and so on.
+Here we have to use two for loops, the first for lopp is for row and the second for loop for columns.
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+Now the value of i and j is incremented with each iteration.
+
+For n=5 (the number of rows we want to print).
+Iteration 1:
+For i=1, 1<=5 (true)
+For j=1, j<=i(1) (true)
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+1
+Now the value of i and j is increased to 2.
+
+
+Iteration 2:
+For i=2, 2<=5 (true)
+For j=2, 2<=2 (true)
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+1
+1 2
+Now the value of i and j is increased to 3.
+
+
+Iteration 3:
+For i=3, 3<=5 (true)
+For j=3, 3<=3 (true)
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+1
+1 2
+1 2 3
+Now the value of i and j is increased to 4.
+
+
+Iteration 4:
+For i=4, 4<=5 (true)
+For j=4, 4<=4 (true)
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+1
+1 2
+1 2 3
+1 2 3 4
+Now the value of i and j is increased to 5.
+
+
+Iteration 5:
+For i=5, 5<=5 (true)
+For j=5, 5<=5 (true)
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+Now the value of i and j is increased to 6.
+
+
+For i=6, 6<5 (false)
+The execution of the program will terminate when the value of i will be greater to the number of rows.
