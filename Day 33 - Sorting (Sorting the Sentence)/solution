@@ -1,0 +1,35 @@
+class Solution {
+    public String sortSentence(String s) {
+        int k=0;
+        String p="";
+        String[] arr=s.split(" ");
+        String[] fin=new String[arr.length];
+      
+     
+        for(int i=0 ;i<arr.length;i++)
+        {
+           int n=arr[i].length();
+            char r=arr[i].charAt(n-1);
+              
+            int z=(r - '0');
+          
+            int w=z-1;
+           
+            for(int j=0;j<arr[i].length()-1;j++)
+                
+            {
+              
+                    fin[w]+=arr[i].charAt(j);
+                
+            }
+          
+        
+        }
+        String str = String.join(",", fin);
+        str=str.replace("null","");
+           str=str.replace(","," ");
+       
+        
+        return str;
+    }
+}
