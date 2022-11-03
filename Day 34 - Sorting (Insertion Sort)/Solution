@@ -1,0 +1,41 @@
+import java.util.*;
+public class InsertionSort {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number of element u want to enter");
+        int  n=sc.nextInt();
+        int[] a = new int[20];
+        System.out.println("Enter elements");
+       for (int i=1;i<=n;i++)
+       {
+           a[i]=sc.nextInt();
+       }
+        insertSort(a,n);
+//        System.out.println(Arrays.toString(a));
+        System.out.println("Sorted Array");
+        for (int i=1;i<=n;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+
+    public static void insertSort(int[] a,int n){
+        long start=System.nanoTime();
+        for(int j=2;j<=n;j++){
+            int i=j-1;
+            int k=a[j];
+            while(i>0 && a[i]>k){
+
+                a[i+1] = a[i];
+                i=i-1;
+            }
+            a[i+1]=k;
+        }
+        long end=System.nanoTime();
+        double finalTime=(end-start)/0.000000001;
+        System.out.println("Execution Time"+ finalTime);
+
+    }
+}
+
