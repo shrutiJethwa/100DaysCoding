@@ -1,0 +1,30 @@
+class Solution {
+    public int heightChecker(int[] heights) {
+        int n=0;
+        int newarr[]=new int[heights.length];
+        for(int i=0;i<heights.length;i++)
+        {
+            newarr[i]=heights[i];
+        }
+          for(int j=1;j<heights.length;j++){
+            int i=j-1;
+            int k=heights[j];
+            while(i>=0 && heights[i]>k){
+
+                heights[i+1] = heights[i];
+                i=i-1;
+            }
+            heights[i+1]=k;
+        }
+        
+        for(int i=0;i<heights.length;i++)
+        {
+            if(newarr[i]!=heights[i])
+            {
+                n++;
+            }
+        }
+        System.out.println(Arrays.toString(heights));
+        return n;
+    }
+}
