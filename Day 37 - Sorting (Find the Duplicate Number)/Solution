@@ -1,0 +1,21 @@
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int min = nums[0];
+        int max = nums[0];
+
+        do {
+            min = nums[min];
+            max = nums[nums[max]];
+        } while (min != max);
+
+     
+        min = nums[0];
+        while (min != max) {
+            min = nums[min];
+            max = nums[max];
+        }
+
+        return max;
+     
+    }
+}
