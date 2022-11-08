@@ -1,0 +1,20 @@
+public class SelectionSort {
+    public static void main(String[] args) {
+      int sort[]=new int[]{50,40,30,20,10};
+      for(int i=0;i<sort.length-1;i++)
+      {
+          int min=i;
+          for(int j=i+1;j<sort.length;j++)
+          {
+              if(sort[j]<sort[min])
+              {
+                  min=j;
+              }
+          }
+          int temp=sort[min];
+          sort[min]=sort[i];
+          sort[i]=temp;
+      }
+        System.out.println(Arrays.toString(sort));
+    }
+}
