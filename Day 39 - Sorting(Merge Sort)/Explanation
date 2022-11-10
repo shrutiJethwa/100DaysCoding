@@ -1,0 +1,19 @@
+📌Problem Statement: Merge Sort
+
+
+📌Explanation:
+The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.
+Think of it as a recursive algorithm continuously splits the array in half until it cannot be further divided. This means that if the array becomes empty or has only one element left, the dividing will stop, i.e. it is the base case to stop the recursion. If the array has multiple elements, split the array into halves and recursively invoke the merge sort on each of the halves. Finally, when both halves are sorted, the merge operation is applied. Merge operation is the process of taking two smaller sorted arrays and combining them to eventually make a larger one.
+
+Time complexity: Best Average Worst
+n logn n logn n logn
+
+📌Example 1:
+Input: nums = [50,40,30,20,10]
+Output: [10,20,30,40,50]
+
+📌Example 2:
+Input: nums = [3,1,4,2]
+Output: [1,2,3,4]
+
+📌Solution:
