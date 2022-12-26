@@ -1,0 +1,50 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+       if (head == null || head.next == null) //none or one
+            return true;
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode old = head;
+        //find the middle node
+        while (fast != null && fast.next != null) {
+            old = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        //divide it to two equal sub lists
+        if (fast != null) { //slow is the middle of odd notes list
+            fast = slow;
+            slow = null;
+        } else { //even nodes list
+            fast = slow;
+            old.next = null;
+        }
+        //reverse the last half list
+        old = null;
+        while (fast != null) {
+            ListNode t = fast.next;
+            fast.next = old;
+            old = fast;
+            fast = t;
+        }
+        //check palindrome of two sub lists
+        slow = head;
+        fast = old;
+        while (slow != null && fast != null) {
+            if (slow.val != fast.val)  return false;
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow == fast;
+    }
+}
